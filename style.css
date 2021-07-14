@@ -260,3 +260,71 @@ footer p{
     margin: 20px 0;
 }
 
+/* Media Query for tab */
+
+@media (max-width:992px) {
+    nav{
+        display: none;
+        /* content: 'f0c9'; */
+    }
+    .players-section {
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        padding: 0 0;
+    }
+
+    .banner-section,
+    .highlight-section{
+        flex-direction: column;
+    }
+
+    .highlight-section .text-part{
+        width: 95%;
+        margin-top: 25px;
+    }
+}
+
+/* Media query for mobile */
+@media (max-width: 688px){
+    .banner-section,
+    .highlight-section{
+        flex-direction: column;
+    }
+
+    nav{
+        display: none;
+    }
+    
+    .banner-text {
+        margin-top:3rem;
+        margin-left: -2rem;
+    }
+
+    .card{
+        margin-top: 30px;
+        margin-bottom: 7px;
+    }
+
+    .banner-text p{
+        font-size: 24px;
+        color: #fff;
+        font-weight: 700;
+        margin-right: 20px;
+    }
+
+    .banner-img img{
+        width: 100%;
+    }
+
+    .players-section {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 0 0;
+    }
+
+    .footer-logo img{
+        margin: 0 0;
+        width: 100%;
+    }
+    
+}
